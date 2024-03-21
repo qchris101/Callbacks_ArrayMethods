@@ -52,14 +52,11 @@ const movies = [
         year: 1979
     }
 ]
-
-
-
+const goodMovies = movies.filter(m => m.score > 80)
 const badMovies = movies.filter(m => m.score < 70)
+
+movies.filter(m => m.score >80).map(m => m.title)
 
 const recentMovies = movies.filter(m => m.year > 2000)
 
-// const goodMovies = movies.filter(m => m.score > 80)
-// const goodTitles = goodMovies.map(m => m.title)
-
-movies.filter(m => m.score > 80).map(m => m.title);
+const validUserNames = userNames => userNames.filter(user => user.length < 10)
